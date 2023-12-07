@@ -8,7 +8,11 @@ permissions:
 jobs:
   generation-job:
     runs-on: ubuntu-latest
-    permissions: write-all
+    permissions:
+      actions: write
+      contents: write
+      pull-requests: write
+      repository-projects: write
     container:
       image: openapitools/openapi-generator-cli:latest
     steps:
