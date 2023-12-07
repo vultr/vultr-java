@@ -12,6 +12,7 @@ jobs:
       contents: write
       pull-requests: write
       repository-projects: write
+      workflows: write
     container:
       image: openapitools/openapi-generator-cli:latest
     steps:
